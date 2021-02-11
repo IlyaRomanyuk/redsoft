@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     btns.forEach(item => {
         item.addEventListener('click', (e) => {
+            if(e.target.classList.contains('btn_cart')) {
+                return;
+            };
             e.target.innerHTML = '<div class="loader"></div>'
             setTimeout(() => {
                 fetch('https://jsonplaceholder.typicode.com/posts/1').
