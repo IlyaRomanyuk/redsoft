@@ -1,0 +1,37 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 122px;
+  min-height: 48px;
+
+  border: none;
+  border-radius: 0;
+  background: $bg-btn;
+  color: $color-btn;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: all .2s ease-in-out;
+
+  position: relative;
+
+  img {
+    margin-right: 7px;
+  }
+
+  &:hover {
+    background: $bg-btn-hover;
+    transition: all .2s ease-in-out;
+  }
+
+  &_sm {
+    min-width: 118px;
+  }
+
+  &_cart {
+    background: $bg-btn-cart;
+  }
+}

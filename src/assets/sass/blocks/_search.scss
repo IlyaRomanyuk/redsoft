@@ -1,0 +1,20 @@
+.search {
+  display: flex;
+
+  &__input {
+    border: 1px solid $bg-border;
+    border-right: none;
+    border-radius: 0;
+    color: $color-text;
+
+    padding: 0 26px;
+    width: 294px;
+    height: 48px;
+
+    outline: none;
+
+    &::placeholder {
+      color: $color-placeholder;
+    }
+  }
+}

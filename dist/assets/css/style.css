@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1246px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Variables*/
+/*Blocks*/
+.header {
+    padding: 24px 0;
+    flex: 0 0 auto;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    max-width: 615px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu__logo {
+    margin-right: 48px;
+}
+
+.menu__nav {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    color: #343030;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 122px;
+    min-height: 48px;
+    border: none;
+    border-radius: 0;
+    background: #403432;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    position: relative;
+}
+
+.btn img {
+    margin-right: 7px;
+}
+
+.btn:hover {
+    background: #776763;
+    transition: all .2s ease-in-out;
+}
+
+.btn_sm {
+    min-width: 118px;
+}
+
+.btn_cart {
+    background: #5B3A32;
+}
+
+.search {
+    display: flex;
+}
+
+.search__input {
+    border: 1px solid #E1E1E1;
+    border-right: none;
+    border-radius: 0;
+    color: #343030;
+    padding: 0 26px;
+    width: 294px;
+    height: 48px;
+    outline: none;
+}
+
+.search__input::-moz-placeholder {
+    color: #9F9F9F;
+}
+
+.search__input:-ms-input-placeholder {
+    color: #9F9F9F;
+}
+
+.search__input::placeholder {
+    color: #9F9F9F;
+}
+
+.section {
+    padding: 45px 0;
+    flex: 1 0 auto;
+}
+
+.section__title {
+    margin-bottom: 39px;
+    color: #343030;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 280px;
+    width: 100%;
+    border: 1px solid #E1E1E1;
+    min-height: 100%;
+}
+
+.card_transparent {
+    opacity: .5;
+}
+
+.card__img {
+    width: 100%;
+    display: block;
+}
+
+.card__body {
+    padding: 20px 24px 24px;
+}
+
+.card__title {
+    font-size: 18px;
+    color: #343030;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+.card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.card__price_sale {
+    text-decoration: line-through;
+    color: #A0A0A0;
+}
+
+.info {
+    display: flex;
+}
+
+.info__phone {
+    text-decoration: none;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info__addres {
+    color: #555;
+    line-height: 1.5;
+}
+
+.info__contact {
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+}
+
+.info__contact img {
+    margin-right: 9px;
+}
+
+.info__contact:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    padding: 24px 0;
+    background: #ECEAEA;
+    flex: 0 0 auto;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Assets*/
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-left-color: #9F9F9F;
+    -webkit-animation: loader 1s linear infinite;
+    animation: loader 1s linear infinite;
+}
+
+@-webkit-keyframes loader {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

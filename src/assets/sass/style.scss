@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 14px;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    font-family: 'Merriweather', serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1246px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*Variables*/
+@import "variables.scss";
+
+
+/*Blocks*/
+@import "blocks/_header.scss";
+@import "blocks/_menu.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_search.scss";
+@import "blocks/_section.scss";
+@import "blocks/_card.scss";
+@import "blocks/_info.scss";
+@import "blocks/_footer.scss";
+
+/*Assets*/
+@import "blocks/_loader.scss";

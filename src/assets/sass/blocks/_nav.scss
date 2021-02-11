@@ -1,0 +1,10 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    color: $color-text;
+    text-decoration: none;
+    line-height: 1.5;
+  }
+}

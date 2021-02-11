@@ -1,0 +1,11 @@
+.footer {
+  padding: 24px 0;
+  background: $bg-footer;
+  flex: 0 0 auto;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

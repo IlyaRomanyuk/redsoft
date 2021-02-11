@@ -1,0 +1,18 @@
+.section {
+  padding: 45px 0;
+  flex: 1 0 auto;
+
+  &__title {
+    margin-bottom: 39px;
+
+    color: $color-text;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}

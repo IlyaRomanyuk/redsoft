@@ -1,0 +1,22 @@
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 20px;
+
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-left-color: #9F9F9F;
+
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  100% {
+    transform:  translate(-50%, -50%) rotate(360deg);
+  }
+}

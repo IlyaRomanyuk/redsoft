@@ -1,0 +1,29 @@
+.info {
+  display: flex;
+
+  &__phone {
+    text-decoration: none;
+    color: $color-footer;
+    line-height: 1.5;
+  }
+
+  &__addres {
+    color: $color-footer;
+    line-height: 1.5;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+
+    margin-right: 48px;
+
+    img {
+      margin-right: 9px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

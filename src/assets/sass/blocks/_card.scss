@@ -1,0 +1,44 @@
+.card {
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid $bg-border;
+  min-height: 100%;
+
+  &_transparent {
+    opacity: .5;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__body {
+    padding: 20px 24px 24px;
+  }
+
+  &__title {
+    font-size: 18px;
+    color: $color-text;
+    line-height: 1.5;
+
+    margin-bottom: 22px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    &_sale {
+      text-decoration: line-through;
+      color: #A0A0A0;
+    }
+  }
+}
